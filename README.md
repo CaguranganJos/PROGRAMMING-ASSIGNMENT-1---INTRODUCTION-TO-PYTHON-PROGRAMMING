@@ -1,1 +1,1 @@
-# PROGRAMMING-ASSIGNMENT-1 - INTRODUCTION-TO-PYTHON-PROGRAMMING
+# Programming Assignment 1: Introduction to Python
