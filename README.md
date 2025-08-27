@@ -1,4 +1,5 @@
 # Programming Assignment 1: Introduction to Python
+Deadline: August 27, 2025; 11:59pm
 
 ## I. Table of Contents:
 
@@ -10,4 +11,6 @@
 
 ## V. Programming Assignment 1.3
 
-## VI. Author
+## VI. Generalizations and Conclusions
+
+## VII. Author
