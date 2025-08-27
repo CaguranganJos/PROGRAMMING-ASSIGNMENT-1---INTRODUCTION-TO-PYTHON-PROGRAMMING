@@ -103,13 +103,13 @@ This is >:(
 ```
 
 #### Step-by-step thought Process
-1. I first defined a function named *emotifier* that has a parameter named *sentence*. This function contains the dictionary, split operation, and a looping statement that changes the words that have a corresponding *key* in the dictionary. Before the "for loop statement", I first made a dictionary containing keys that are the words and values that are the emoticons. Now that I have made the dictionary, the next thing I need to do is to treat the words in a sentence as different valued characters using the operation *.split*, which made the sentence to a list of words.
+1. I first defined a function named *emotifier* that has a parameter named *sentence*. This function contains the dictionary, split operation, and a looping statement that changes the words that have a corresponding *key* in the dictionary. Before the "for loop statement", I first made a dictionary containing keys that are the words, and values that are the emoticons. Now that I have made the dictionary, the next thing I need to do is to treat the words in a sentence as individual words using the operation *.split*, which made the sentence to a list of words.
 ```python
 def emotifier(sentence):
     emoji = {"smile": ":)", "grin":":D", "sad":":((", "mad":">:("}
     words = sentence.split()
 ```
-2. Now that the sentence is split into individual words, I can make a for loop statement that changes specific words into an emoticon. However, there is a chance that the words and the keys inside the dictionary may not be equal due to the difference in cases(uppercase and lowercase). To solve this, I first use the operation *.lower()* to make all the words lowercase stored in *lower_case* as a list. The if statement indicates that if a word stored in *lower_case* has a corresponding key, then it will be replaced with the key's value. Then I needed to join the words together as well as the "replaced word" into one sentence using the operation *.join()*. Lastly is to return the result into the function.
+2. Now that the sentence is split into individual words, I can make a for loop statement that changes specific words into an emoticon. However, there is a chance that the words and the keys inside the dictionary may not be equal due to the difference in cases(uppercase and lowercase). To solve this, I first use the operation *.lower()* to make all the words lowercase and to be stored in *lower_case* as a list. The if statement indicates that if a word stored in *lower_case* has a corresponding key, then it will be replaced with the key's value. Then I needed to join the words together as well as the "replaced word" into one sentence using the operation *.join()*. Lastly is to return the result into the function.
 ```python
 for i in range(len(words)):
         lower_case = words[i].lower()
@@ -171,7 +171,7 @@ last: Finger Lime
 ```
 
 #### Step-by-step thought Process
-1. I first made a list containing words and numbers that I will use as my list to unpack. I made three variables: first, middle, and last. Since the first element is in the 0 index, then I can store that element in variable *first* using *list_name[0]*. This method is also applicable to the variable *last*, since the index -1 is always the last element in a list, therefore I can store the element in index -1 to the varaible *last* using *list_name[-1]*. Lastly, I used the range operation in the middle variable using *list_name[1:-1]*, this operation indicates that all the elements starting from index 1 to index -1 (excluding -1) will be in the list contained in variable *middle*.
+1. I first made a list containing words and numbers that I will use as my list to unpack. I made three variables: first, middle, and last. Since the first element is in the 0 index, then I can store that element in a variable named *first* using *list_name[0]*. This method is also applicable to the variable *last*, since the index -1 is always the last element in a list, therefore I can store the element in index -1 to the varaible *last* using *list_name[-1]*. Lastly, I used the range operation in the middle variable using *list_name[1:-1]*, this operation indicates that all the elements starting from index 1 to index -1 (excluding -1) will be in the list contained in variable *middle*.
 > Using numbers:
 ```python
 numbers = [1,2,3,4,5,6] 
@@ -188,7 +188,7 @@ first = words[0]
 middle = words[1:-1] 
 last = words[-1] 
 ```
-2. To test if the code runs well I printed  the words: "first", "last", and "middle" together with their corresponding variables.
+2. To test if the code runs well, I printed  the words: "first", "last", and "middle" together with their corresponding variables.
 using numbers
 ```python
 print("first:",first) 
